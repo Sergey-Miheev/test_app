@@ -9,7 +9,6 @@ class MainScreen extends StatefulWidget {
 }
 
 class _MainScreenState extends State<MainScreen> {
-
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -18,15 +17,13 @@ class _MainScreenState extends State<MainScreen> {
           backgroundColor: Theme.of(context).colorScheme.inversePrimary,
           title: Text(context.strings.appName),
         ),
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              const Text(
-                'You have pushed the button this many times:',
-              ),
-            ],
-          ),
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: <Widget>[
+            Text(
+              context.strings.findJob,
+            ),
+          ],
         ),
       ),
     );
